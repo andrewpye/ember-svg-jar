@@ -25,7 +25,8 @@
     "prepublish": "npm run build && not-in-install && npm test || not-in-publish",
     "lint": "eslint src addon app tests node-tests",
     "nodetest": "node node-tests/runner.js",
-    "test": "npm run lint && npm run nodetest && ember test"
+    "test": "npm run lint && npm run nodetest && ember test",
+    "install": "npm run build"
   },
   "dependencies": {
     "broccoli-caching-writer": "^2.3.1",
